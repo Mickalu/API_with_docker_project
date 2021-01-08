@@ -16,7 +16,6 @@ from info_data import information_data
 app = FastAPI()
 templates = Jinja2Templates(directory = "../templates")
 
-# tab_algo = displayBetterAlgo(DIR_PATH_DATA, FILE_DATA_CSV)
 data_info = information_data(DIR_PATH_DATA, FILE_DATA_CSV)
 
 @app.get("/")
@@ -43,6 +42,6 @@ def html_file(request: Request):
 def html_file(request: Request):
     return templates.TemplateResponse("data_info.html", {"request": request, "data_info": data_info})
 
-# @app.get("/html/algo")
-# def html_file(request: Request, tab_algo: int):
-#     return templates.TemplateResponse("meilleur_algo.html", {"request": request, "tab_algo": tab_algo})
+@app.get("/html/algo")
+def html_file(request: Request):
+    return templates.TemplateResponse("meilleur_algo.html", {"request": request, "tab_algo":  displayBetterAlgo(DIR_PATH_DATA, FILE_DATA_CSV)})
