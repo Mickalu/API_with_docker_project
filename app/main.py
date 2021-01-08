@@ -11,10 +11,13 @@ FILE_DATA_CSV = "/KDD_clean_database.csv"
 
 sys.path.insert(1,FUNC_DIRECT)
 from trouver_meilleur_algo import displayBetterAlgo
+from info_data import information_data
 
 app = FastAPI()
 templates = Jinja2Templates(directory = "../templates")
 
+# tab_algo = displayBetterAlgo(DIR_PATH_DATA, FILE_DATA_CSV)
+data_info = information_data(DIR_PATH_DATA, FILE_DATA_CSV)
 
 @app.get("/")
 def read_root():
@@ -24,6 +27,10 @@ def read_root():
 def findAlgo():
     return displayBetterAlgo(DIR_PATH_DATA, FILE_DATA_CSV)
 
+@app.get("/data")
+def function_display_info_data():
+    return data_info
+
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Optional[str] = None):
     return {"item_id": item_id, "q": q}
@@ -31,3 +38,11 @@ def read_item(item_id: int, q: Optional[str] = None):
 @app.get("/html")
 def html_file(request: Request):
     return templates.TemplateResponse("index.html", {"request": request, "id": 2})
+
+@app.get("/html/data")
+def html_file(request: Request):
+    return templates.TemplateResponse("data_info.html", {"request": request, "data_info": data_info})
+
+# @app.get("/html/algo")
+# def html_file(request: Request, tab_algo: int):
+#     return templates.TemplateResponse("meilleur_algo.html", {"request": request, "tab_algo": tab_algo})

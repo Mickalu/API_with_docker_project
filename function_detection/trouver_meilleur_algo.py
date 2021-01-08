@@ -10,7 +10,6 @@ from multiprocessing.pool import ThreadPool
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.ensemble import RandomForestClassifier
@@ -89,4 +88,6 @@ def displayBetterAlgo(DIR_PATH_DATA, FILE_DATA_CSV):
 
     
     ListDicAlgo = async_result.get()
+
     return ListDicAlgo
+
