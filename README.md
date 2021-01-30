@@ -124,4 +124,8 @@ install uvicorn
 - Utilisation des commandes docker  
 - création d'un contener 
 - création d'un contener avec une image 
+- mettre projet dans un docker container
+- lancer un container
+
+
         
