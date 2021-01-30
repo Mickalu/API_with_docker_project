@@ -122,7 +122,6 @@ install uvicorn
 #### Docker 
 
 - Utilisation des commandes docker  
-<<<<<<< HEAD
 - création d'un contener 
 - création d'un contener avec une image 
 - mettre projet dans un docker container
@@ -147,8 +146,4 @@ install uvicorn
 - Décompresser le contenu d'un dossier pour pouvoir installer Ubuntu
 
 
-### WSL
->>>>>>> cde662553cddeded8bfe5a4582945e6d2ce8a4c2
-
-
-        
+      
