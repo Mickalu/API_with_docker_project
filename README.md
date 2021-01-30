@@ -73,6 +73,39 @@ HTML 5 est un langage extrêmement présent dans la programamtion web. Cela nous
 
 
 
+# Ce que nous avons appris
+
+* Docker
+* Python
+* FAST API
+* WSL
+
+#### Docker     
+- Utilisation des commandes docker  
+- création d'un contener 
+- création d'un contener avec une image 
+- mettre projet dans un docker container
+- lancer un container
+- création d'un fichier docker-compose.yml
+- créer le Dockerfile
+
+#### Python
+- utilisation des threads pour alléger le temps de calcule 
+
+#### FAST API 
+- utilisation des requetes get 
+- utilisation des requetes post 
+- création des pages  
+- Lier les scripts python et html à l'API
+- Utilisation de root
+
+#### WSL
+- Implémenter Ubuntu sur Windows
+- Passer de WSL1 à WLS2 
+- Autoriser la virtualisation de son CPU et la désactiver
+- Décompresser le contenu d'un dossier pour pouvoir installer Ubuntu
+
+
 ## Architecture
 
 Les dossiers
@@ -111,39 +144,7 @@ install uvicorn
 * [docker pour mac](https://docs.docker.com/docker-for-mac/install/)
 * [docker pour linux](https://docs.docker.com/engine/install/)
 
+## Lancer le projet 
+Dans votre terminal allez dans le dossier **app** utilisez la commande :
 
-# Ce que nous avons appris
-
-* Docker
-* Python
-* FAST API
-* WSL
-
-#### Docker 
-
-- Utilisation des commandes docker  
-- création d'un contener 
-- création d'un contener avec une image 
-- mettre projet dans un docker container
-- lancer un container
-- création d'un fichier docker-compose.yml
-- créer le Dockerfile
-
-#### Python
-- utilisation des threads pour alléger le temps de calcule 
-
-#### FAST API 
-- utilisation des requetes get 
-- utilisation des requetes post 
-- création des pages  
-- Lier les scripts python et html à l'API
-- Utilisation de root
-
-#### WSL
-- Implémenter Ubuntu sur Windows
-- Passer de WSL1 à WLS2 
-- Autoriser la virtualisation de son CPU et la désactiver
-- Décompresser le contenu d'un dossier pour pouvoir installer Ubuntu
-
-
-      
+        uvicorn main:app --reload
