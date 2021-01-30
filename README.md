@@ -126,6 +126,25 @@ install uvicorn
 - création d'un contener avec une image 
 - mettre projet dans un docker container
 - lancer un container
+- création d'un fichier docker-compose.yml
+- créer le Dockerfile
+
+#### Python
+- utilisation des threads pour alléger le temps de calcule 
+
+#### FAST API 
+- utilisation des requetes get 
+- utilisation des requetes post 
+- création des pages 
+- implémentation de pages HTML 
+- implémentation d'une API sur un projet
+
+#### WSL
+- Implémenter Ubuntu sur Windows
+- Passer de WSL1 à WLS2 
+- Autoriser la virtualisation de son CPU et la désactiver
+- Décompresser le contenu d'un dossier pour pouvoir installer Ubuntu
+
 
 
         
