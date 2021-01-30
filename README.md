@@ -2,7 +2,7 @@
 ![Docker image](https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/horizontal-logo-monochromatic-white.png)
 
 
-Projet on a API with python and docker
+Project on a API with python and docker
 
 ## Un simple Readme sur un projet de cours utilisant à la fois Fast API et Docker.
 
@@ -10,7 +10,7 @@ Projet on a API with python and docker
 
 ## Description
 
-Ce projet a pour but d'intégré un projet de machine learning dans une API et de pouvoir le déployer avec Docker. 
+Ce projet a pour but d'intégrer un projet de machine learning dans une API et de pouvoir le déployer avec Docker. 
 
 
 
@@ -41,11 +41,11 @@ Nous avons décidé d'utiliser Docker car c'est un outil Open Source et simple �
 très répandu et utilisé donc nous avons une bonne documentation pour nous aider.
 
 #### Python
-Nous avons choisie de travailler avec Python pour plusieurs raisons. Nous avons tout d'abord fait le projet de machine learning en python, car il est assez simple de manipuler de la donnée avec python et, il est simple de faire des algorithme de machine learning avec. De plus Python possède une bibliothèque pour faire des API qui est [FAST API](https://fastapi.tiangolo.com/). Il fut donc assez simple d'allier les deux ensembles, de plus cela nous évitait de devoir implémenter un autre langage dans le projet.  
+Nous avons choisi de travailler avec Python pour plusieurs raisons. Nous avons tout d'abord fait le projet de machine learning en python, car il est assez simple de manipuler de la donnée avec python et, il est simple de faire des algorithmes de machine learning avec. De plus, Python possède une bibliothèque pour faire des API qui est [FAST API](https://fastapi.tiangolo.com/). Il fut donc assez simple d'allier les deux ensembles et cela nous évitait de devoir implémenter un autre langage dans le projet.  
 
 | Avantages  | Inconvénients |
 |----------- |------------- |
-| Peut être utilisé pour faire la partie API et la partie projet | Plutot lent pour faire réaliser les algorithmes et afficher les résultats : C++ plus rapide pour la réalisation des algorithmes |
+| Peut être utilisé pour faire la partie API et la partie projet | Plutot lent pour faire tourner les algorithmes et afficher les résultats : C++ plus rapide pour la réalisation des algorithmes |
 | Langage simple d'utilisation, pas besoin de compilateur car langage interprété donc plus simple à installer | Le langage étant moins exigent en terme d'organisation on peut facilement s'y perdre si mal organisé |
 
 
@@ -54,26 +54,26 @@ FAST API est une bibliothèque Python qui permet de faire des API très rapideme
 
 ![image_code_fast_api](/images/API_code.png)
 
-Faire des pages est assez intuitives se qui permet d'aller vite dans l'apprentissage de cette bibliothèque. 
+Faire des pages est assez intuitif ce qui permet d'aller vite dans l'apprentissage de cette bibliothèque. 
 
 On peut facilement y implémenter des pages HTML pour améliorer le rendu et que cela soit plus intuitive pour les personnes utilisant FAST API. 
 
 | Avantages  | Inconvénients |
 |----------- |------------- |
-| Très simple d'utilisation et assez intuitive | Cela n'est pas fait pour les gros projets en web, on va vite être limité, favorisé la bibliothèque [Django](https://www.djangoproject.com/) à ce moment là.  |
-| étant en Python, il est extrêmement simple d'y implémenter des projets qui sont dans le même langage | Contrairement à d'autre bibliothèque, l'architecture de l'API n'est pas imposé, c'est donc au groupe de faire attention à cela |
+| Très simple d'utilisation et assez intuitif | Cela n'est pas fait pour les gros projets en web, on va vite être limité, favoriser la bibliothèque [Django](https://www.djangoproject.com/) à ce moment là.  |
+| Etant en Python, il est extrêmement simple d'y implémenter des projets qui sont dans le même langage | Contrairement à d'autre bibliothèque, l'architecture de l'API n'est pas imposé, c'est donc au groupe de faire attention à cela |
 
 #### HTML5
-HTML 5 est un langage extrêmement présent dans la programamtion web. Cela nous permet via des balises de structurer notre page et pouvoir ainsi avoir un meilleur rendu. Ce langage permet de mettre que le possitionnement des éléments sur la page, pour ce qui est de l'aspect et de l'emplacement il va nous falloir utiliser du CSS. 
+HTML 5 est un langage extrêmement présent dans la programamtion web. Cela nous permet via des balises de structurer notre page et pouvoir ainsi avoir un meilleur rendu. Ce langage ne permet de mettre que le positionnement des éléments sur la page, pour ce qui est de l'aspect et de l'emplacement il va nous falloir utiliser du CSS. 
 
 | Avantages  | Inconvénients |
 |----------- |------------- |
 | C'est le langage le plus utilisé pour la créatiion de pages web, il y a donc beaucoup de documentation | Pour une petite API, mettre du HTML est sans doute pas nécesaire, cela va nous faire perdre plus de temps que ajouter une vraie plus value à notre API |
-| Peut rendre plus intuitive l'utilisation de notre API | Cela ajoute du volume à notre API |
+| Peut rendre plus intuitif l'utilisation de notre API | Cela ajoute du volume à notre API |
 
 
 
-## architecture
+## Architecture
 
 Les dossiers
 
@@ -83,10 +83,10 @@ Les dossiers
 * app
 
 #### data 
-Ce dossier contient tout les fichiers csv utilent pour l'utilisation des aldorithmes de machine learning.
+Ce dossier contient tout les fichiers csv utilent pour l'utilisation des algorithmes de machine learning.
 
 #### function_detection 
-Ce dossier va contenit tous les fichiers python pour le traitement des données, l'entraînement des algorithmes et l'affichage des résultats.
+Ce dossier va contenir tous les fichiers python pour le traitement des données, l'entraînement des algorithmes et l'affichage des résultats.
 
 #### templates 
 Ce dossier ne va contenir que des fichiers HTML 5, qui vont permettre de créer des pages web dans notre api pour pouvoir ainsi afficher au mieux les résultats.
@@ -112,7 +112,7 @@ install uvicorn
 * [docker pour linux](https://docs.docker.com/engine/install/)
 
 
-# ce que nous avons appris
+# Ce que nous avons appris
 
 * Docker
 * Python
@@ -122,10 +122,18 @@ install uvicorn
 #### Docker 
 
 - Utilisation des commandes docker  
-- création d'un contener 
-- création d'un contener avec une image 
-- mettre projet dans un docker container
-- lancer un container
+- Création d'un conteneur 
+- Création d'un conteneur avec une image 
+- Mettre projet dans un docker container
+- Lancer un container
+
+### FAST API
+
+- Création d'une API
+- Lier les scripts python et html à l'API
+- Utilisation de root
+
+### WSL
 
 
         
