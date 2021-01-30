@@ -22,6 +22,23 @@ Ce projet a pour but d'intégré un projet de machine learning dans une API et d
 * HTML 5
 
 #### Docker
+Docker permet de packager tous les services, scripts, API, librairies dont une application 
+a besoin ; on appelle cela un conteneur. L'objectif est de tout réunir pour l'utiliser
+sur n'importe quel noyau compatible. Cela permet d'utiliser un seul noyau qui sera partagé
+par plusieurs conteneurs. Cela apporte certains avantages comme ajouter de la portabilité 
+aux projets ou de moins impacter les performances des serveurs, en un mot donner de l'**agilité**.
+
+**Docker :**
+
+| Avantages | Inconvénients | 
+|-----------|---------------|
+| Docker prend en charge différents systèmes d’exploitation et plateformes de Cloud.| Le moteur Docker ne prend en charge que son propre format de conteneur. |
+| La plateforme Docker offre déjà des outils natifs d’orchestration et de gestion de clusters. | Le logiciel est disponible sous la forme d’un fichier programme monolithique contenant toutes les caractéristiques. |
+
+D'autres outils existent comme Kebernetes ou LXC par exemple.  
+
+Nous avons décidé d'utiliser Docker car c'est un outil Open Source et simple à comprendre et à mettre en place. Il est aussi 
+très répandu et utilisé donc nous avons une bonne documentation pour nous aider.
 
 #### Python
 Nous avons choisie de travailler avec Python pour plusieurs raisons. Nous avons tout d'abord fait le projet de machine learning en python, car il est assez simple de manipuler de la donnée avec python et, il est simple de faire des algorithme de machine learning avec. De plus Python possède une bibliothèque pour faire des API qui est [FAST API](https://fastapi.tiangolo.com/). Il fut donc assez simple d'allier les deux ensembles, de plus cela nous évitait de devoir implémenter un autre langage dans le projet.  
