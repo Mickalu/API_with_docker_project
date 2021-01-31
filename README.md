@@ -148,3 +148,8 @@ install uvicorn
 Dans votre terminal allez dans le dossier **app** utilisez la commande :
 
         uvicorn main:app --reload
+
+## Conclusion 
+Pour faire un projet, le choix des technologies sont très importantes. Ici nous avons utiliser FAST API pour faire l'api car cela est simple d'implémentation pour les petits projets et cela est intuitives. Chaque personnes travaillant sur le projet peuvent faire leurs propres pages sans que cela impact les autres. Il est aussi possible de faire des API avec **Flask** en Python, mais cela est moins intuitif et demande plus de travail. Pour un petit projet comme le notre FASR API est largement suffisant. 
+
+Nous avons aussi travaillé avec Docker, cela va permettre de créer un environnement de travail avec tout d'installer directement sur l'ordinateur. Cela est très intéressant car si des personnes ne travaillent sur le même système d'exploitation il peut y avoir des bug, alors que ici non. Le seule défaut est que cela demande à ce que les personnes travaillant sur le projet soient organisées. Pour nous il est assez simple de travailler comme cela vu que nous sommes que deux sur le projet, en plus le projet n'est pas très volumineux donc cela est plus simple.  
